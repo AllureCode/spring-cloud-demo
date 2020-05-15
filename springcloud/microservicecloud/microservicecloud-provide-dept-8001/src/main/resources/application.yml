@@ -1,0 +1,20 @@
+server:
+  port: 8001  #端口
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: com.gnawococ.springcloud.entity
+  mapper-locations:
+    - classpath:mybatis/mapper/**/*.xml
+spring:
+  application:
+    name: microservicecloud-dept
+  datasource:
+    username: root
+    password: username
+    url: jdbc:mysql://192.168.14.131:3306/test?serverTimezone=GMT&characterEncoding=UTF-8&allowMultiQueries=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    dbcp2:
+      min-idle: 5
+      initial-size: 5
+      max-total: 5
