@@ -11,6 +11,9 @@
     <module>microservicecloud-api</module>
     <module>microservicecloud-provide-dept-8001</module>
     <module>microservicecloud-consumer-dept-80</module>
+    <module>microservicecloud-eureka-7001</module>
+      <module>microservicecloud-eureka-7002</module>
+    <module>microservicecloud-eureka-7003</module>
   </modules>
   <packaging>pom</packaging>
   <name>microservicecloud</name>
@@ -83,6 +86,15 @@
   </dependencies>
 
   <build>
+    <!---->
+    <finalName>microservicecloud</finalName>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+    <!---->
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
@@ -95,6 +107,17 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
+        <!---->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <configuration>
+            <delimiters>
+              <delimiter>$</delimiter>
+            </delimiters>
+          </configuration>
+        </plugin>
+        <!---->
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
