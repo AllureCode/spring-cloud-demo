@@ -1,0 +1,10 @@
+spring:
+  cloud:
+      config:
+        name: microservicecloud-config-client
+#        discovery:
+#          enabled: true
+#          service-id: microservicecloud-config # config-server的application.name
+        label: master
+        profile: dev
+        uri: http://config-3333.com:3344

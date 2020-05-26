@@ -33,4 +33,3 @@ info:
   app.name: gnawococ-microservicecloud
   company.name: www.gnawococ.com
   build.artifactId: microservicecloud-provide-dept-8001
-  build.version: 1.0-SNAPSHOT

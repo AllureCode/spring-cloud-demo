@@ -19,6 +19,9 @@
         <module>microservicecloud-provide-dept-8001-hystrix</module>
         <module>microservicecloud-consumer-dept-feign</module>
         <module>microservicecloud-consumer-hystrix-dashboard</module>
+        <module>microservicecloud-zuul-gateway-9527</module>
+        <module>microservicecloud-configuration-3333</module>
+        <module>microservicecloud-configuration-client-3355</module>
     </modules>
     <packaging>pom</packaging>
     <name>microservicecloud</name>
